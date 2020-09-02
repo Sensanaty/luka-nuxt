@@ -14,7 +14,7 @@
         </div>
         <div id="blog-box" class="home-box black-out">
             <div class="box-letter" aria-hidden="true">A</div>
-            <nuxt-link class="white-out box-link" aria-label="Link to Blog page" to="/blog">BLOG</nuxt-link>
+            <nuxt-link class="white-out box-link" aria-label="Link to Blog page" to="/rambles">RAMBLES</nuxt-link>
         </div>
     </div>
 </template>
@@ -27,7 +27,8 @@ export default {
 
 <style lang="scss">
 .home-wrapper {
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
     grid-template-areas:
@@ -38,24 +39,19 @@ export default {
 
 .box-link {
     font-size: 1.2rem;
+    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     transition: all 150ms ease-in-out;
 
-    &:hover {
-        color: $highlight;
-    }
+    &:hover { color: $highlight }
 }
 
 .black-out {
     background: $main;
     color: $secondary;
-
-    &:hover {
-
-    }
 }
 
 .white-out {
@@ -70,11 +66,11 @@ export default {
     justify-self: center;
 }
 
-// Box grids
 .home-box {
     display: grid;
 }
 
+// Top Left
 #about-box {
     grid-template: 1fr 1fr 125px / 3fr 1fr 125px ;
     grid-template-areas:
@@ -86,6 +82,7 @@ export default {
     .box-link { grid-area: link }
 }
 
+// Top Right
 #projects-box {
     grid-template: 1fr 1fr 125px / 125px 1fr 3fr;
     grid-template-areas:
@@ -97,6 +94,7 @@ export default {
     .box-link { grid-area: link }
 }
 
+// Bottom Left
 #contact-box {
     grid-template: 125px 1fr 1fr / 3fr 1fr 125px;
     grid-template-areas:
@@ -104,10 +102,14 @@ export default {
         ". letter ."
         ". . .";
 
-    .box-letter { grid-area: letter}
+    .box-letter {
+        grid-area: letter;
+        align-self: flex-start
+    }
     .box-link { grid-area: link }
 }
 
+// Bottom Right
 #blog-box {
     grid-template: 125px 1fr 1fr / 125px 1fr 3fr;
     grid-template-areas:
@@ -115,7 +117,10 @@ export default {
         ". letter ."
         ". . .";
 
-    .box-letter { grid-area: letter }
+    .box-letter {
+        grid-area: letter;
+        align-self: flex-start
+    }
     .box-link { grid-area: link }
 }
 </style>
