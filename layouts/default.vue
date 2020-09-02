@@ -4,8 +4,9 @@
 
 <style lang="scss">
 @import "./assets/scss/mixins/fontface";
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-@include fontface("Josefin Sans", "../assets/fonts/JosefinSans-Medium", medium);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+@include fontface("Aeonik", "../assets/fonts/Aeonik-Bold", bold);
+@include fontface("Aeonik", "../assets/fonts/Aeonik-Medium", 500);
 
 html {
     background: $main;
