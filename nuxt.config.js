@@ -1,5 +1,5 @@
 export default {
-    mode: 'universal',
+    mode: 'spa',
     target: 'static',
     head: {
         title: process.env.npm_package_name || '',
@@ -33,5 +33,7 @@ export default {
         '@nuxt/content'
     ],
     content: {},
-    build: {}
+    build: {
+        analyze: true
+    }
 }
