@@ -4,6 +4,11 @@
 
 <script>
 export default {
-    name: "Rambles"
+    name: "Rambles",
+    head() {
+        return {
+            title: "LUKA | RAMBLES"
+        }
+    }
 }
 </script>

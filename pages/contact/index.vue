@@ -4,6 +4,11 @@
 
 <script>
 export default {
-    name: "Contact"
+    name: "Contact",
+    head() {
+        return {
+            title: "LUKA | CONTACT"
+        }
+    }
 }
 </script>

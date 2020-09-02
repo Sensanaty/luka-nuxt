@@ -4,6 +4,11 @@
 
 <script>
 export default {
-    name: "Projects"
+    name: "Projects",
+    head() {
+        return {
+            title: "LUKA | PROJECTS"
+        }
+    }
 }
 </script>
