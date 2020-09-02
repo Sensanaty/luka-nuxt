@@ -10,5 +10,6 @@
 
 * {
     font-family: "Josefin Sans", sans-serif;
+    background: $main;
 }
 </style>
