@@ -4,6 +4,6 @@
 
 <script>
 export default {
-    name: "Blog"
+    name: "Rambles"
 }
 </script>

@@ -2,7 +2,7 @@ export default {
     mode: 'spa',
     target: 'static',
     head: {
-        title: process.env.npm_package_name || '',
+        title: "L U K A",
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
