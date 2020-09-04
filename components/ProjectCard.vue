@@ -33,9 +33,9 @@ export default {
 
 <style lang="scss">
 .project-card {
-    width: 60%;
+    width: 65%;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     margin: 35px auto;
     padding: 20px 25px;
     background: lighten($dark-highlight, 2);
@@ -63,6 +63,8 @@ export default {
         &.javascript { background: $highlight; color: $main; }
         &.netlify { background: #4a9d8e; color: $main; }
         &.react { background: #5bd9ff; color: $main; }
+        &.ember { background: #fa9500; color: $main }
+        &.nuxt { background: #05668D; color: $secondary }
     }
 }
 
@@ -98,5 +100,13 @@ export default {
     font-size: 1.7em;
     font-weight: 700;
     margin: 5px 0;
+    transition: color 115ms ease-in-out, transform 150ms ease-in-out;
+
+    &:hover {
+        color: darken($highlight, 15);
+        transform: translateY(1px);
+    }
+
+    &:active { transform: translateY(3px) }
 }
 </style>

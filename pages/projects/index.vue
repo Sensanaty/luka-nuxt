@@ -1,13 +1,14 @@
 <template>
-    <div class="project-wrapper">
-        <ProjectCard
-            title="Spotlight"
-            subtitle="Keep track of your restaurant's online presence in one convenient spot!"
-            :stacks="['Rails', 'Heroku', 'Javascript', 'Vue', 'Netlify', 'React']"
-            :descriptions="['Built with restaurant managers and owners in mind, Spotlight is a tool built with the intention of making their lives easier by taking away the monotony of having to check a huge number of different crowd-sourced review sites every single day. With Spotlight, all your Google, Tripadvisor, Zomato and Yelp reviews live under one unified dashboard for a much easier time accessing what your clients are thinking about.']"
+    <div class="projects-wrapper">
+        <ProjectCard v-for="project in projects"
+            :key="project.id"
+            :title="project.title"
+            :subtitle="project.subtitle"
+            :stacks="project.stacks"
+            :descriptions="project.description"
             :links="{
-                external: 'https://sp0tlight.herokuapp.com',
-                internal: 'spotlight'
+                external: project.links.external,
+                internal: project.links.internal
             }"
         />
     </div>
@@ -15,10 +16,16 @@
 
 <script>
 import ProjectCard from "@/components/ProjectCard"
+import projectList from "@/assets/lists/projectList.json";
 
 export default {
     name: "Projects",
     layout: "header",
+    data() {
+        return {
+            projects: projectList
+        }
+    },
     components: {
         ProjectCard
     },
@@ -30,4 +37,9 @@ export default {
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.projects-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+}
+</style>
