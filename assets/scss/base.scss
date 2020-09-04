@@ -8,6 +8,7 @@ html {
     color: $secondary;
 }
 
+::selection { background: $secondary; color: $main }
 ::-webkit-scrollbar { width: 5px }
 ::-webkit-scrollbar-track { background: $main }
 ::-webkit-scrollbar-thumb {
@@ -26,5 +27,5 @@ html, body, #__nuxt, #__layout, .layout-wrapper {
 
 .layout-wrapper {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
 }
