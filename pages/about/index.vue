@@ -40,6 +40,7 @@ export default {
 
 <style lang="scss">
 .about-wrapper {
+    height: 100%;
     font-family: "Aeonik", sans-serif;
     font-weight: bold;
     display: grid;

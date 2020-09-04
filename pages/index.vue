@@ -27,6 +27,7 @@ export default {
 
 <style lang="scss">
 .home-wrapper {
+    height: 100%;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     display: grid;

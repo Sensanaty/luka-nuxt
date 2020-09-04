@@ -8,6 +8,18 @@ html {
     color: $secondary;
 }
 
-html, body, #__nuxt, #__layout, .page-wrapper {
+::-webkit-scrollbar { width: 5px }
+::-webkit-scrollbar-track { background: $main }
+::-webkit-scrollbar-thumb {
+    background: $highlight;
+    border-radius: 5px;
+
+    &:hover {background: darken($highlight, 10);}
+}
+
+html, body, #__nuxt, #__layout, .layout-wrapper {
     height: 100%;
+    box-sizing: content-box;
+    scrollbar-color: $highlight $main;
+    scrollbar-width: thin;
 }
