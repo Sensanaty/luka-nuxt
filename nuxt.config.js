@@ -19,7 +19,8 @@ export default {
         ]
     },
     css: [
-        '@/assets/styles/normalize.css'
+        '@/assets/styles/normalize.css',
+        '@/assets/scss/base.scss'
     ],
     styleResources: {
         scss: ['@/assets/scss/variables/*.scss']
@@ -33,7 +34,5 @@ export default {
         '@nuxt/content'
     ],
     content: {},
-    build: {
-        analyze: true
-    }
+    build: {}
 }
