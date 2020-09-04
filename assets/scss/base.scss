@@ -23,3 +23,8 @@ html, body, #__nuxt, #__layout, .layout-wrapper {
     scrollbar-color: $highlight $main;
     scrollbar-width: thin;
 }
+
+.layout-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+}
