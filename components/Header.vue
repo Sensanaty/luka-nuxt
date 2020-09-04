@@ -20,7 +20,6 @@ export default {
 header, .header-nav {
     display: flex;
     width: 100%;
-    margin: 10px 0;
 }
 
 .header-nav {
@@ -28,6 +27,7 @@ header, .header-nav {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     user-select: none;
+    margin: 10px 0;
 
     .nuxt-link-exact-active { background: lighten($dark-highlight, 5) }
 }
