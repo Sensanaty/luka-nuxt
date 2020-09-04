@@ -27,9 +27,15 @@ header, .header-nav {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     user-select: none;
-    margin: 10px 0;
+    margin: 0 0 10px 0;
+    border-top: 1.5px solid $main;
+    transition: all 125ms ease-in-out;
 
-    .nuxt-link-exact-active { background: lighten($dark-highlight, 5) }
+    .nuxt-link-exact-active {
+        box-sizing: border-box;
+        background: lighten($dark-highlight, 5);
+        border-top: 1.5px solid $highlight;
+    }
 }
 
 .header-navlink {
