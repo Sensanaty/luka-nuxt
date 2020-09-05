@@ -31,7 +31,8 @@ export default {
         '@nuxtjs/style-resources'
     ],
     modules: [
-        '@nuxt/content'
+        '@nuxt/content',
+        'nuxt-svg-loader'
     ],
     content: {},
     build: {}
