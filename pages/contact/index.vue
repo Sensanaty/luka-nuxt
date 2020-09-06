@@ -17,7 +17,7 @@
             <p class="form-intro">Feel free to send me a message through the form below, or through one of my socials
                 above</p>
 
-            <form name="contact-me" method="post" data-netlify="true" data-netlify-bot-field="honey">
+            <form name="contact-me" method="post" data-netlify="true" data-netlify-bot-field="honey" netlify>
                 <ul v-if="errors.length > 0">
                     <p>Please fix the below errors and try again:</p>
                     <li v-for="(error, index) in errors" :key="index">{{ error }}</li>
