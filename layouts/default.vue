@@ -1,7 +1,9 @@
 <template>
     <div class="layout-wrapper">
         <Header v-if="showHeader" />
-        <Nuxt />
+        <transition name="fade" mode="out-in">
+            <Nuxt />
+        </transition>
     </div>
 </template>
 
@@ -22,3 +24,8 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+.fade-enter-active, .fade-leave-active { transition: opacity 250ms }
+.fade-enter, .fade-leave-to { opacity: 0 }
+</style>
