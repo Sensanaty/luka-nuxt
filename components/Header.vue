@@ -1,7 +1,7 @@
 <template>
     <header>
         <nav class="header-nav">
-            <nuxt-link to="/" class="header-navlink">LUKA</nuxt-link>
+            <nuxt-link to="/" class="header-navlink" aria-label="Home Link">LUKA</nuxt-link>
             <nuxt-link to="/projects" class="header-navlink">PROJECTS</nuxt-link>
             <nuxt-link to="/contact" class="header-navlink">CONTACT</nuxt-link>
             <nuxt-link to="/rambles" class="header-navlink">RAMBLES</nuxt-link>
@@ -28,8 +28,6 @@ header, .header-nav {
     font-weight: 700;
     user-select: none;
     margin: 0 0 10px 0;
-    border-top: 1.5px solid $main;
-    transition: all 125ms ease-in-out;
 
     .nuxt-link-exact-active {
         box-sizing: border-box;
@@ -46,7 +44,8 @@ header, .header-nav {
     padding: 10px 0;
     text-align: center;
     min-width: 17%;
-    transition: transform 150ms ease-in-out, background-color 110ms ease-in-out;
+    border-top: 1.5px solid $main;
+    transition: transform 150ms ease-in-out, background-color 110ms ease-in-out, border-top-color 125ms ease-in-out;
 
     &:hover { transform: translateY(3px) }
     &:active { background: lighten($dark-highlight, 5) }
