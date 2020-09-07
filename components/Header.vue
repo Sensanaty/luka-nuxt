@@ -32,7 +32,7 @@ header, .header-nav {
     .nuxt-link-exact-active {
         box-sizing: border-box;
         background: lighten($dark-highlight, 5);
-        border-top: 1.5px solid $highlight;
+        border-top: 2px solid $highlight;
     }
 }
 
@@ -44,7 +44,7 @@ header, .header-nav {
     padding: 10px 0;
     text-align: center;
     min-width: 17%;
-    border-top: 1.5px solid $main;
+    border-top: 2px solid $main;
     transition: transform 150ms ease-in-out, background-color 110ms ease-in-out, border-top-color 125ms ease-in-out;
 
     &:hover { transform: translateY(3px) }

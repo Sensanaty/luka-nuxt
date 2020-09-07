@@ -8,6 +8,8 @@ html {
     color: $secondary;
 }
 
+body { overflow: scroll }
+
 ::selection { background: $highlight; color: $main }
 ::-webkit-scrollbar { width: 5px }
 ::-webkit-scrollbar-track { background: $main }
@@ -16,6 +18,11 @@ html {
     border-radius: 5px;
 
     &:hover {background: darken($highlight, 10);}
+}
+::-webkit-scrollbar-button:decrement,
+::-webkit-scrollbar-button:increment,
+::-webkit-scrollbar-corner {
+    width: 0; height: 0;
 }
 
 html, body, #__nuxt, #__layout, .layout-wrapper {
