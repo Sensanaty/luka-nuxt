@@ -3,14 +3,28 @@
         <div class="header-section">
             <h1 class="project-title">{{ title }}</h1>
             <div class="stacks-wrapper">
-                <span v-for="(stack, index) in stacks" :class="stack.toLowerCase()" aria-hidden="true" :key="index">{{ stack }}</span>
+                <span v-for="(stack, index) in stacks" :class="stack.toLowerCase()" aria-hidden="true" :key="index">
+                    {{ stack }}
+                </span>
             </div>
         </div>
         <h2 class="project-subtitle">{{ subtitle }}</h2>
-        <p class="project-description" v-for="(description, index) in descriptions" :key="index + stacks.length">{{ description }}</p>
+        <p class="project-description" v-for="(description, index) in descriptions" :key="index + stacks.length">
+            {{ description }}
+        </p>
         <div class="project-link-wrapper">
-            <a class="project-card-link project-link" v-if="links.external" :href="links.external">See it in action</a>
-            <nuxt-link class="project-card-link ramble-link" v-if="links.internal" :to="`/rambles/${links.internal}`">See the ramble</nuxt-link>
+            <a
+                class="project-card-link project-link"
+                v-if="links.external"
+                :href="links.external"
+                target="_blank"
+                rel="noopener"
+            >
+                See it in action
+            </a>
+            <nuxt-link class="project-card-link ramble-link" v-if="links.internal" :to="`/rambles/${links.internal}`">
+                See the ramble
+            </nuxt-link>
         </div>
     </div>
 </template>

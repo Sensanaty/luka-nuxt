@@ -8,7 +8,7 @@ html {
     color: $secondary;
 }
 
-::selection { background: $secondary; color: $main }
+::selection { background: $highlight; color: $main }
 ::-webkit-scrollbar { width: 5px }
 ::-webkit-scrollbar-track { background: $main }
 ::-webkit-scrollbar-thumb {

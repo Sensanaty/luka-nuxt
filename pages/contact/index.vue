@@ -18,8 +18,8 @@
                 above</p>
 
             <form name="contact-me" method="post" data-netlify="true" data-netlify-bot-field="honey" netlify>
+                <p class="error-fix" v-if="errors.length > 0">Please fix the below errors and try again:</p>
                 <ul v-if="errors.length > 0">
-                    <p>Please fix the below errors and try again:</p>
                     <li v-for="(error, index) in errors" :key="index">{{ error }}</li>
                 </ul>
                 <label for="email">Email</label>
@@ -170,8 +170,12 @@ export default {
     font-size: 3em;
 }
 
-.form-intro {
-    font-size: 1.4em;
+.form-intro { font-size: 1.4em }
+
+.error-fix {
+    margin: 0 0 15px 0;
+    font-size: 1.3em;
+    text-align: center;
 }
 
 form {
@@ -179,11 +183,6 @@ form {
     flex-flow: column wrap;
     align-items: center;
     width: 50%;
-
-    ::selection {
-        background: $highlight;
-        color: black;
-    }
 
     label {
         align-self: center;
@@ -201,6 +200,7 @@ form {
         border: none;
         outline: 2px solid $main;
         transition: outline 150ms ease-in-out;
+        user-select: none;
 
         &:focus {
             outline: 1px solid $highlight;
@@ -208,7 +208,7 @@ form {
     }
 
     input {
-        width: 50%
+        width: 50%;
 
         &:-webkit-autofill {
             -webkit-text-fill-color: $secondary;
@@ -228,12 +228,6 @@ form {
         margin: 0;
         padding: 0;
 
-        p {
-            margin: 0 0 15px 0;
-            font-size: 1.3em;
-            text-align: center;
-        }
-
         li {
             list-style: none;
             text-align: center;
@@ -250,12 +244,11 @@ form {
         padding: 7px 20px;
         cursor: pointer;
         transition: all 150ms ease-in-out;
+        user-select: none;
 
         &:hover {
             background: lighten($dark-highlight, 4);
         }
     }
 }
-
-
 </style>
