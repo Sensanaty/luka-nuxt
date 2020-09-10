@@ -30,7 +30,10 @@ html, body, #__nuxt, #__layout, .layout-wrapper {
     box-sizing: content-box;
     scrollbar-color: $highlight $main;
     scrollbar-width: thin;
+    font-family: "Aeonik", sans-serif;
 }
+
+h1,h2,h3,p { font-family: "Aeonik", sans-serif }
 
 .layout-wrapper {
     display: flex;
