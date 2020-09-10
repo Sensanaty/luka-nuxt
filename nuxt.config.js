@@ -34,6 +34,8 @@ export default {
         '@nuxt/content',
         'nuxt-svg-loader'
     ],
-    content: {},
+    content: {
+        liveEdit: false
+    },
     build: {}
 }
