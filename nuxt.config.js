@@ -35,7 +35,12 @@ export default {
         'nuxt-svg-loader'
     ],
     content: {
-        liveEdit: false
+        liveEdit: false,
+        markdown: {
+            prism: {
+                theme: 'prism-themes/themes/prism-material-dark.css'
+            }
+        }
     },
     build: {}
 }
