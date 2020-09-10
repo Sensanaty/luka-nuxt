@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.5.0",
+    "dayjs": "^1.8.35",
     "nuxt": "^2.14.0",
-    "nuxt-mq": "^2.0.1",
     "nuxt-svg-loader": "^1.2.0"
   },
   "devDependencies": {
