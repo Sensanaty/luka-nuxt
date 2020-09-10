@@ -45,7 +45,7 @@ export default {
     padding: 20px 25px;
     text-decoration: none;
     position: relative;
-    transition: background 2 00ms ease-in-out;
+    transition: background-color 200ms ease-in-out;
 
     &:after {
         content: "Read More";
@@ -55,7 +55,7 @@ export default {
         top: 25px;
         color: $highlight;
         opacity: 0;
-        transition: all 150ms ease-in-out;
+        transition: all 120ms ease-in-out;
         font-size: 1.3em;
     }
 
@@ -76,9 +76,11 @@ export default {
 .ramble-title, .ramble-description { margin: 0 }
 
 .ramble-title {
+    font-size: 4em;
     text-decoration: underline solid $highlight;
     display: inline-flex;
     margin-bottom: 20px;
 }
 
+.ramble-description { font-size: 1.4em }
 </style>
