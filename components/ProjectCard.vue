@@ -70,6 +70,7 @@ export default {
         margin: 0 8px;
         padding: 6px 12px;
         user-select: none;
+        display: inline-flex;
 
         &.rails { background: #cc0000; color: $secondary }
         &.heroku { background: #6762a6; color: $secondary }
