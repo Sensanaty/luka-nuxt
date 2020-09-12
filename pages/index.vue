@@ -1,5 +1,5 @@
 <template>
-    <div class="page-wrapper home-wrapper">
+    <div class="home-wrapper">
         <div id="about-box" class="home-box black-out">
             <div class="box-letter" aria-hidden="true">L</div>
             <nuxt-link class="white-out box-link" aria-label="Link to About Me page" to="/about">ABOUT</nuxt-link>
@@ -124,4 +124,6 @@ export default {
     }
     .box-link { grid-area: link }
 }
+
+@import "./assets/scss/media-queries/homepage";
 </style>
