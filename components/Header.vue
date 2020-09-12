@@ -1,11 +1,11 @@
 <template>
     <header>
         <nav class="header-nav">
-            <nuxt-link to="/" class="header-navlink" aria-label="Home Link">LUKA</nuxt-link>
-            <nuxt-link to="/projects" class="header-navlink">PROJECTS</nuxt-link>
-            <nuxt-link to="/contact" class="header-navlink">CONTACT</nuxt-link>
-            <nuxt-link to="/rambles" class="header-navlink">RAMBLES</nuxt-link>
-            <nuxt-link to="/about" class="header-navlink">ABOUT</nuxt-link>
+            <nuxt-link to="/" id="home-link" class="header-navlink" aria-label="Home Link">LUKA</nuxt-link>
+            <nuxt-link to="/projects" id="projects-link" class="header-navlink">PROJECTS</nuxt-link>
+            <nuxt-link to="/contact" id="contact-link" class="header-navlink">CONTACT</nuxt-link>
+            <nuxt-link to="/rambles" id="rambles-link" class="header-navlink">RAMBLES</nuxt-link>
+            <nuxt-link to="/about" id="about-link" class="header-navlink">ABOUT</nuxt-link>
         </nav>
     </header>
 </template>
@@ -50,4 +50,6 @@ header, .header-nav {
     &:hover { transform: translateY(3px) }
     &:active { background: lighten($dark-highlight, 5) }
 }
+
+@import "./assets/scss/media-queries/header";
 </style>

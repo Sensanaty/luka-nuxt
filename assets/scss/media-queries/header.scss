@@ -1,0 +1,54 @@
+@media screen and (max-width: 1085px) { .header-navlink { font-size: 1.8em } }
+
+@media screen and (max-width: 850px) {
+    .header-navlink {
+        font-size: 1.6em;
+        justify-content: center;
+        min-width: unset;
+        flex: 1 0 auto;
+        border: none;
+
+        &:hover { transform: translateY(0) }
+    }
+
+    .header-nav .nuxt-link-exact-active {
+        background: lighten($dark-highlight, 5);
+        border-top: none;
+    }
+}
+
+@media screen and (max-width: 600px) { .header-navlink { font-size: 1.35em } }
+
+@media screen and (max-width: 475px) {
+    header {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin-top: auto;
+        z-index: 1;
+    }
+
+    .header-nav {
+        margin: 0;
+        display: grid;
+        grid-template: 1fr 1fr / repeat(6, 1fr);
+        grid-template-areas:
+            "home home home about about about"
+            "projects projects contact contact rambles rambles";
+    }
+
+    #home-link { grid-area: home; font-size: 1.7em }
+    #about-link { grid-area: about; font-size: 1.7em }
+    #projects-link { grid-area: projects }
+    #contact-link { grid-area: contact }
+    #rambles-link { grid-area: rambles }
+
+    .page-wrapper {
+        margin: 5px 0 110px 0;
+    }
+
+    .header-navlink {
+        display: flex;
+        align-items: center;
+    }
+}
