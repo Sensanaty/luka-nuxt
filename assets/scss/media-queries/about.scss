@@ -1,0 +1,99 @@
+@media screen and (max-width: 1360px) {
+    .description { font-size: 5rem }
+}
+
+@media screen and (max-width: 1195px) {
+    .description { font-size: 4.5rem }
+
+    .nav-text { font-size: 1.6rem}
+
+    .squared-link {
+        &.inline-link {
+            font-size: 1.8rem;
+            min-width: 170px;
+        }
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    .description { font-size: 3.9rem }
+}
+
+@media screen and (max-width: 935px) {
+    .description { font-size: 3.5rem }
+
+    .nav-text { font-size: 1.45rem }
+
+    .squared-link {
+        &.inline-link {
+            font-size: 1.5rem;
+            min-width: 145px;
+        }
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .nav-text { font-size: 2.6rem }
+
+    .squared-link {
+        &.inline-link {
+            font-size: 2.2rem;
+            min-width: 230px;
+        }
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .greeting { font-size: 5.9rem }
+    .description { font-size: 3rem }
+}
+
+@media screen and (max-width: 715px) {
+    .greeting { font-size: 5rem}
+    .description { font-size: 2.5rem}
+}
+
+@media screen and (max-width: 595px) {
+    .intro {
+        text-align: center;
+        margin: 2% 1%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .greeting { font-size: 4rem}
+    .description { font-size: 2rem}
+    .nav-text { font-size: 2rem }
+
+    .squared-link {
+        &.inline-link {
+            font-size: 2rem;
+            min-width: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .greeting { font-size: 3rem}
+    .nav-text { font-size: 1.7rem }
+
+    .squared-link {
+        &.inline-link {
+            font-size: 1.7rem;
+            min-width: 170px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .squared-link.inline-link {
+        padding: 8px;
+        font-size: 1.3rem;
+        min-width: 120px;
+    }
+    .nav-text { font-size: 1.4rem }
+}
+
+@media screen and (max-width: 325px) {
+    .greeting { font-size: 2.5rem }
+}

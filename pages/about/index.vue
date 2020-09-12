@@ -1,5 +1,5 @@
 <template>
-    <div class="page-wrapper about-wrapper">
+    <div class="about-wrapper">
         <div class="intro">
             <h1 class="greeting">
                 Hi, I'm
@@ -12,15 +12,15 @@
 
         <div class="links">
             <p class="nav-text">
-                Want to see what I've been working on lately? Check out my
+                <span v-if="!hideOnMobile">Want to see what I've been working on lately?</span> Check out my
                 <nuxt-link to="/projects" class="inline-link squared-link">PROJECTS</nuxt-link>
             </p>
             <p class="nav-text">
-                Wanted to talk to me about a project? Get in
+                <span v-if="!hideOnMobile">Wanted to talk to me about a project?</span> Get in
                 <nuxt-link to="/contact" class="inline-link squared-link">CONTACT</nuxt-link>
             </p>
             <p class="nav-text">
-                I write down my thoughts as I make things. Check out the
+                <span v-if="!hideOnMobile">I write down my thoughts as I make things.</span> Check out the
                 <nuxt-link to="/rambles" class="inline-link squared-link">RAMBLES</nuxt-link>
             </p>
         </div>
@@ -28,12 +28,28 @@
 </template>
 
 <script>
+import debounce from "lodash.debounce";
+
 export default {
     name: "About",
     head() {
         return {
             title: "LUKA | ABOUT"
         }
+    },
+    data() {
+        return {
+            hideOnMobile: false
+        }
+    },
+    mounted() {
+        this.hideOnMobile = window.innerWidth <= 875;
+
+        window.addEventListener("resize", debounce(() => {
+            if (window.innerWidth <= 875) {
+                this.hideOnMobile = true;
+            } else { this.hideOnMobile = false }
+        }, 25));
     }
 }
 </script>
@@ -65,6 +81,11 @@ export default {
 .nav-text {
     font-size: 2rem;
     margin: 20px 0;
+
+    pre {
+        margin: 0;
+        font-family: "Aeonik", sans-serif;
+    }
 }
 
 .links {
@@ -98,4 +119,6 @@ export default {
         &:hover { transform: translateY(2px) }
     }
 }
+
+@import "./assets/scss/media-queries/about";
 </style>
