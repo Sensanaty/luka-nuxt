@@ -1,5 +1,5 @@
 <template>
-    <div class="projects-wrapper">
+    <div class="page-wrapper projects-wrapper">
         <ProjectCard v-for="project in projects"
             :key="project.id"
             :title="project.title"

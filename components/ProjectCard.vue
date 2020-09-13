@@ -71,6 +71,7 @@ export default {
         padding: 6px 12px;
         user-select: none;
         display: inline-flex;
+        text-align: center;
 
         &.rails { background: #cc0000; color: $secondary }
         &.heroku { background: #6762a6; color: $secondary }
@@ -124,4 +125,6 @@ export default {
 
     &:active { transform: translateY(3px) }
 }
+
+@import "./assets/scss/media-queries/projectCard";
 </style>
