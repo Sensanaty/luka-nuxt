@@ -1,0 +1,18 @@
+@media screen and (max-width: 850px) {
+    article { width: 85%}
+
+    .nuxt-content .line-numbers { border: none; border-radius: unset }
+}
+
+@media screen and (max-width: 575px) {
+    .nuxt-content h1 { font-size: 2.5em }
+    .nuxt-content h2 { font-size: 1.7em; margin: 15px 0 }
+}
+
+@media screen and (max-width: 475px) {
+    article { width: 100%; padding: 10px }
+    .nuxt-content .line-numbers { padding: 10px; font-size: 0.85rem }
+    .nuxt-content p { font-size: 1.2em }
+    .nuxt-content p > code { font-size: 1.1rem }
+}
+

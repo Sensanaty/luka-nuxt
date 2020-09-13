@@ -1,16 +1,30 @@
 <template>
-        <article>
-            <nuxt-link class="back-link" to="/rambles">Back</nuxt-link>
+        <article class="page-wrapper">
+            <nuxt-link v-if="!hideOnMobile" class="back-link" to="/rambles">Back</nuxt-link>
             <nuxt-content :document="ramble"/>
         </article>
 
 </template>
 
 <script>
+import debounce from "lodash.debounce";
+
 export default {
     async asyncData({ $content, params }) {
         const ramble = await $content('rambles', params.slug).fetch();
         return { ramble }
+    },
+    data() {
+        return {
+            hideOnMobile: false
+        }
+    },
+    mounted() {
+        this.hideOnMobile = window.innerWidth <= 475;
+
+        window.addEventListener("resize", debounce(() => {
+            this.hideOnMobile = window.innerWidth <= 475;
+        }, 25))
     },
     head() {
         return {
@@ -83,4 +97,6 @@ article {
         }
     }
 }
+
+@import "./assets/scss/media-queries/ramblePage";
 </style>
