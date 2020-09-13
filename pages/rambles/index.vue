@@ -1,5 +1,5 @@
 <template>
-    <div class="ramble-wrapper">
+    <div class="page-wrapper ramble-wrapper">
         <nuxt-link class="ramble-card" v-for="ramble in rambles" :key="ramble.slug" :to="{ name: 'rambles-slug', params: { slug: ramble.slug } }">
             <div class="ramble-header-wrapper">
                 <pre class="date">{{ ramble.updatedAt | humanReadable }}</pre>
@@ -83,4 +83,6 @@ export default {
 }
 
 .ramble-description { font-size: 1.4em }
+
+@import "./assets/scss/media-queries/rambles";
 </style>

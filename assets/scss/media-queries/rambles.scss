@@ -1,0 +1,14 @@
+@media screen and (max-width: 850px) {
+    .ramble-card { width: 85% }
+}
+
+@media screen and (max-width: 475px) {
+    .ramble-card { width: 100% }
+    .ramble-title { font-size: 3rem }
+    .ramble-description { font-size: 1.25rem }
+}
+
+@media screen and (max-width: 400px) {
+    .ramble-title { font-size: 2rem }
+    .ramble-description { font-size: 1.15rem }
+}
