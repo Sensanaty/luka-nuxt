@@ -1,5 +1,5 @@
 <template>
-    <div class="contact-wrapper">
+    <div class="page-wrapper contact-wrapper">
         <div class="icons-wrapper">
             <a href="https://github.com/sensanaty" class="social-link" target="_blank" rel="noopener">
                 <GithubIcon class="social-icon"/>
@@ -14,7 +14,7 @@
         </div>
         <div class="form-section">
             <h1 class="contact-header">Looking for a fullstack developer for your webapp?</h1>
-            <p class="form-intro">Feel free to send me a message through the form below, or through one of my socials
+            <p v-if="!hideOnMobile" class="form-intro">Feel free to send me a message through the form below, or through one of my socials
                 above</p>
 
             <form name="contact-me" method="post" data-netlify="true" data-netlify-bot-field="honey" netlify>
@@ -38,6 +38,7 @@
 import GithubIcon from "@/assets/icons/github.svg"
 import LinkedinIcon from "@/assets/icons/linkedin.svg"
 import GmailIcon from "@/assets/icons/gmail.svg"
+import debounce from "lodash.debounce";
 
 export default {
     name: "Contact",
@@ -52,7 +53,8 @@ export default {
                 email: null,
                 message: null
             },
-            errors: []
+            errors: [],
+            hideOnMobile: false
         }
     },
     methods: {
@@ -123,6 +125,13 @@ export default {
         return {
             title: "LUKA | CONTACT"
         }
+    },
+    mounted() {
+        this.hideOnMobile = window.innerWidth <= 990;
+
+        window.addEventListener("resize", debounce(() => {
+            this.hideOnMobile = window.innerWidth <= 990;
+        }, 25))
     }
 }
 </script>
@@ -251,4 +260,6 @@ form {
         }
     }
 }
+
+@import "./assets/scss/media-queries/contact";
 </style>

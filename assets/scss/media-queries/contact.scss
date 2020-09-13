@@ -1,0 +1,26 @@
+@media screen and (max-width: 1395px) {
+    .form-section { width: 100% }
+}
+
+@media screen and (max-width: 1185px) {
+    .contact-header { font-size: 2.4em}
+}
+
+@media screen and (max-width: 990px) {
+    .contact-header { font-size: 2.1em; margin-bottom: 20px }
+
+    form {
+        width: 75%;
+        input { width: 100% }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .contact-header { text-align: center }
+}
+
+@media screen and (max-width: 475px) {
+    form { width: 100% }
+
+    .form-section { padding: 25px 4px }
+}
