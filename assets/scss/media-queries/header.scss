@@ -52,3 +52,7 @@
         align-items: center;
     }
 }
+
+@media screen and (max-width: 320px) {
+    #projects-link, #contact-link, #rambles-link { font-size: 1em }
+}
