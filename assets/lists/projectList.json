@@ -1,5 +1,37 @@
 [
     {
+        "id": "vanessa",
+        "title": "Vanessa Sölter",
+        "subtitle": "The personal portfolio of an Australian-based industrial designer",
+        "stacks": [
+            "Vue",
+            "Netlify"
+        ],
+        "description": [
+            "Vanessa Sölter is an Australian-based industrial designer who approached me after she wanted to convert her generic SquareSpace templated website into something a bit more unique and appropriate for someone calling themselves a designer. The site was rebuilt from the ground up by myself with plenty of input from Vanessa."
+        ],
+        "links": {
+            "external": "https://vxsdesign.com",
+            "internal": null
+        }
+    },
+    {
+        "id": "steven",
+        "title": "Steven Graaf",
+        "subtitle": "The personal portfolio website of Steven de Graaf, a Dutch training advisor",
+        "stacks": [
+            "Javascript",
+            "Netlify"
+        ],
+        "description": [
+            "Steven Graaf is a Netherlands-based training advisor who approached me for a very simple, static website he wanted built. Steven wanted a simple, to-the-point portfolio site that would outline who he was as a professional, and as such I stuck with a simple, vanilla HTML + CSS + Javascript stack, all hosted on Netlify."
+        ],
+        "links": {
+            "external": "https://stevendegraaf.com",
+            "internal": null
+        }
+    },
+    {
         "id": "spotlight",
         "title": "Spotlight",
         "subtitle": "Keep track of your restaurant's online presence in one convenient spot!",
@@ -24,68 +56,17 @@
             "Heroku"
         ],
         "description": [
-            "Built with restaurant managers and owners in mind, Spotlight is a tool built with the intention of making their lives easier by taking away the monotony of having to check a huge number of different crowd-sourced review sites every single day. With Spotlight, all your Google, Tripadvisor, Zomato and Yelp reviews live under one unified dashboard for a much easier time accessing what your clients are thinking about.",
-            "Built with restaurant managers and owners in mind, Spotlight is a tool built with the intention of making their lives easier by taking away the monotony of having to check a huge number of different crowd-sourced review sites every single day. With Spotlight, all your Google, Tripadvisor, Zomato and Yelp reviews live under one unified dashboard for a much easier time accessing what your clients are thinking about."
+            "A Rails application built in a 1 week development sprint at the Le Wagon fullstack bootcamp. The pitch was that we wanted to create an \"AirBNB Clone\" as a proper introduction to the world of Rails development, and to also see how the 4 of us meshed in a team development setting. It was a lot of fun to work on it, and we're all pretty happy with the results."
         ],
         "links": {
             "external": "https://airp2p.herokuapp.com",
-            "internal": "spotlight"
-        }
-    },
-    {
-        "id": "vanessa",
-        "title": "Vanessa Sölter",
-        "subtitle": "The personal portfolio of an Australian-based industrial designer",
-        "stacks": [
-            "Vue",
-            "Netlify"
-        ],
-        "description": [
-            "Built with restaurant managers and owners in mind, Spotlight is a tool built with the intention of making their lives easier by taking away the monotony of having to check a huge number of different crowd-sourced review sites every single day. With Spotlight, all your Google, Tripadvisor, Zomato and Yelp reviews live under one unified dashboard for a much easier time accessing what your clients are thinking about."
-        ],
-        "links": {
-            "external": "https://vanessasoelter.com",
-            "internal": "vanessa"
-        }
-    },
-    {
-        "id": "steven",
-        "title": "Steven Graaf",
-        "subtitle": "The personal portfolio website of Steven de Graaf, a Dutch training advisor",
-        "stacks": [
-            "Javascript",
-            "Netlify"
-        ],
-        "description": [
-            "Built with restaurant managers and owners in mind, Spotlight is a tool built with the intention of making their lives easier by taking away the monotony of having to check a huge number of different crowd-sourced review sites every single day. With Spotlight, all your Google, Tripadvisor, Zomato and Yelp reviews live under one unified dashboard for a much easier time accessing what your clients are thinking about.",
-            "Built with restaurant managers and owners in mind, Spotlight is a tool built with the intention of making their lives easier by taking away the monotony of having to check a huge number of different crowd-sourced review sites every single day. With Spotlight, all your Google, Tripadvisor, Zomato and Yelp reviews live under one unified dashboard for a much easier time accessing what your clients are thinking about."
-        ],
-        "links": {
-            "external": "https://stevendegraaf.com",
-            "internal": "steven"
-        }
-    },
-    {
-        "id": "cash",
-        "title": "How's The Cash?",
-        "subtitle": "A sleek and easy way of tracking your finances.",
-        "stacks": [
-            "Vue",
-            "Netlify"
-        ],
-        "description": [
-            "Built with restaurant managers and owners in mind, Spotlight is a tool built with the intention of making their lives easier by taking away the monotony of having to check a huge number of different crowd-sourced review sites every single day. With Spotlight, all your Google, Tripadvisor, Zomato and Yelp reviews live under one unified dashboard for a much easier time accessing what your clients are thinking about.",
-            "Built with restaurant managers and owners in mind, Spotlight is a tool built with the intention of making their lives easier by taking away the monotony of having to check a huge number of different crowd-sourced review sites every single day. With Spotlight, all your Google, Tripadvisor, Zomato and Yelp reviews live under one unified dashboard for a much easier time accessing what your clients are thinking about."
-        ],
-        "links": {
-            "external": "https://howsthe.cash",
-            "internal": "cash"
+            "internal": "airp2p"
         }
     },
     {
         "id": "tic-tac-toe",
         "title": "Ember-Tac-Toe",
-        "subtitle": "The personal portfolio website of Steven de Graaf, a Dutch training advisor",
+        "subtitle": "An online game of Tic-Tac-Toe played against a (dumb) computer",
         "stacks": [
             "Ember",
             "Rails",
@@ -93,8 +74,8 @@
             "Heroku"
         ],
         "description": [
-            "Built with restaurant managers and owners in mind, Spotlight is a tool built with the intention of making their lives easier by taking away the monotony of having to check a huge number of different crowd-sourced review sites every single day. With Spotlight, all your Google, Tripadvisor, Zomato and Yelp reviews live under one unified dashboard for a much easier time accessing what your clients are thinking about.",
-            "Built with restaurant managers and owners in mind, Spotlight is a tool built with the intention of making their lives easier by taking away the monotony of having to check a huge number of different crowd-sourced review sites every single day. With Spotlight, all your Google, Tripadvisor, Zomato and Yelp reviews live under one unified dashboard for a much easier time accessing what your clients are thinking about."
+            "Ember-Tac-Toe was a project I had built as part of a coding interview challenge for a company called Feedback Fruits in 3 days. They were searching for Junior Fullstack devs, and had a great challenge in place where even developers unfamiliar with Ember like myself could get the chance to play around with it a bit and build out something fun and challenging.",
+            "The backend part of the stack is a Rails API hosted on Heroku that keeps a tally of a user's scores vs the naïve computer."
         ],
         "links": {
             "external": "https://ember-tac-toe.netlify.com",
@@ -111,8 +92,7 @@
             "Netlify"
         ],
         "description": [
-            "Built with restaurant managers and owners in mind, Spotlight is a tool built with the intention of making their lives easier by taking away the monotony of having to check a huge number of different crowd-sourced review sites every single day. With Spotlight, all your Google, Tripadvisor, Zomato and Yelp reviews live under one unified dashboard for a much easier time accessing what your clients are thinking about.",
-            "Built with restaurant managers and owners in mind, Spotlight is a tool built with the intention of making their lives easier by taking away the monotony of having to check a huge number of different crowd-sourced review sites every single day. With Spotlight, all your Google, Tripadvisor, Zomato and Yelp reviews live under one unified dashboard for a much easier time accessing what your clients are thinking about."
+            "Perhaps it's unfair to list this as a project, it was, however, my first exposure to the Vue Framework, Nuxt. It's also one of the first websites I've ever seriously dedicated any kind of substantial time to, and it's seen a number of changes since its humble beginnings as 5 HTML files hastily stitched together by a complete beginner."
         ],
         "links": {
             "external": null,
