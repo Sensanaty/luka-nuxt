@@ -1,6 +1,6 @@
 export default {
     mode: 'spa',
-    target: 'static',
+    target: 'server',
     head: {
         title: "L U K A",
         meta: [
