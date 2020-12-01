@@ -42,5 +42,14 @@ export default {
             }
         }
     },
-    build: {}
+    build: {},
+    loading: {
+        color: "#F7CA3B",
+        height: "3px"
+    },
+    loadingIndicator: {
+        name: "wandering-cubes",
+        color: "#F7CA3B",
+        background: "#272727"
+    }
 }
